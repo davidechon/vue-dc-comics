@@ -1,15 +1,22 @@
-/* eslint-disable */
 <template>
-  <footer class="footer">
-    <div>Footer</div>
+  <footer class="footer container-fluid">
+    <div class="footerUp"><FooterUp /></div>
+    <div class="footerDown"><FooterDown /></div>
   </footer>
 </template>
 
 <script>
+
+import FooterUp from '../components/FooterUp.vue';
+import FooterDown from '../components/FooterDown.vue';
 export default {
-  name: 'Footer'
-    
+  name:'Footer',
+  components: {
+      FooterUp,
+      FooterDown,
   }
+     
+}
 
 </script>
 
@@ -17,6 +24,8 @@ export default {
 .footer{
   border: 1px solid green;
   width: 100%;
-  height: 100px;
+  height: 370px;
+  background-image: url('../assets/img/footer-bg.jpg');
+  background-position: cover;
 }
 </style>
