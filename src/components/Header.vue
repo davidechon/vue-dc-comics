@@ -21,10 +21,9 @@ export default {
 header{
     width: 100%;
     height: 120px;
-    line-height: 120px;
-    // background-color: rgba(49,97,224,255);
-    // position: fixed;
-    // z-index: 1;
+    line-height: 100px;
+    background-color: #fff;
+    margin-bottom: 0;
 }
 
 </style>

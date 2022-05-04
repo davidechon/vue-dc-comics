@@ -1,15 +1,12 @@
 <template>
- <nav class="container clearfix">
-  <div class="logo">
-      <a href="#" class="logo">
-          <img src="../assets/img/dc-logo.png" alt="logo">
-      </a>
-  </div>
-  <ul>
-      <li v-for="(item, index) in links" :key="index" :class="{'selected' : item.active}"><a href="#">{{item.text}}</a></li>
-      
-  </ul>   
-</nav>
+ <nav class="container">
+    <div class="logo">
+      <img src="../assets/img/dc-logo.png" alt="logo">
+      <ul>
+          <li v-for="(item, index) in links" :key="index" :class="{'selected' : item.active}">{{item.text}}</li>
+      </ul>  
+    </div> 
+  </nav>
 </template>
 
 <script>
@@ -19,14 +16,14 @@ export default {
     return{
     links:[
     {  
-      text: 'CHARACTER',
+      text: 'character',
       link: '',
       active: false,
     },
     {
       text: 'COMICS',
       link: '',
-      active: false,
+      active: true,
     },
     {
       text: 'MOVIES',
@@ -68,61 +65,49 @@ export default {
       link: '',
       active: false,
     }
-  ]
+    ]
+    }
   }
-  }
-
-  
+ 
 }
 </script>
 
 <style lang="scss" scoped>
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.container{
-    width: 80%;
-    margin: 0 auto;
-}
+
 nav{
-    width: 100%;
-    height: 120px;
-    line-height: 120px;
-    // background-color: rgba(49,97,224,255);
-    // position: fixed;
-    // z-index: 1;
-}
-nav .logo, nav ul{
-    display: flex;
-    flex-flow: row nowrap;
-    // justify-content: space-around;
-    
-}
-nav .logo img{
-  border: 1px solid blue;
+  height: 100px;
   display: flex;
   flex-flow: row nowrap;
-  justify-items: flex-start;
-    align-content: center;
+  position: relative;
+}
+nav .logo img{
+  position: absolute;
+  width: 70px;
+  top: 10px;
+  left: 10px;
+  line-height: 100px;
+  vertical-align: middle;
 }
 nav ul {
-  border: 1px solid blue;
-    list-style-type: none;
-    width: 80%;
-    text-align: center;
-    font-size: 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  list-style-type: none;
+  height: 100px;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
 }
-nav ul li {
-    display: inline-block;
+nav ul li{
+  text-decoration: none;
+  margin: 0 10px;
 }
-nav ul li a{
-    text-decoration: none;
-    margin: 0 20px;
-    color: #000000;
-}
-nav ul li a:hover {
-    border-bottom: 1px solid blue;
-}
+.selected{
+  border-bottom: 6px solid #0282f9;
+} 
+
 </style>
