@@ -13,7 +13,6 @@ export default {
 <style lang="scss" scoped>
 .rowContent{
   width: 100%;
-  border: 1px solid pink;
   height: 100px;
   display: flex;
   align-items: center;

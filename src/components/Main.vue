@@ -24,9 +24,8 @@ export default {
 
 <style lang="scss" scoped>
 .main{
-  // border: 1px solid red;
+  border: 1px solid red;
   width: 100%;
-  height: 500px;
   color: #ffffff;
 }
 </style>

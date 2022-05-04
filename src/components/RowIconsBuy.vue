@@ -66,10 +66,10 @@ export default {
   color: #ffffff;
   // background-color: #ffffff;
 }
-.iconImg{
-  color:lime;
-}
-.iconText{
-  color:red;
-}
+// .iconImg{
+//   color:lime;
+// }
+// .iconText{
+//   color:red;
+// }
 </style>
