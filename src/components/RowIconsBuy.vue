@@ -1,15 +1,13 @@
 <template>
   <div class="container-fluid rowIconsBuy">
-    
     <div class="iconsBuy">
       <ul>
           <li v-for="(icon, index) in icons" :key="index">
-            <img :src="icon.Img" :alt="icon.img">
-            <span class="iconText">{{icon.text}}</span>
+            <img :src="icon.img" :alt="icon.text">
+            <span :class="iconText">{{icon.text}}</span>
           </li>
       </ul>  
     </div> 
-  
   </div>
 </template>
 
@@ -21,23 +19,23 @@ export default {
       icons:[
         {  
           text: 'digital comics',
-          img: require('../assets/img/buy-comics-digital-comics.png'),
+          img: '../assets/img/buy-comics-digital-comics.png',
         },
         {
           text: 'dc merchandise',
-          img: require('../assets/img/buy-comics-merchandaise.png'),
+          img: '../assets/img/buy-comics-merchandaise.png',
         },
         {
           text: 'subscription',
-          img: require('../assets/img/buy-comics-subscriptions.png'),
+          img: '../assets/img/buy-comics-subscriptions.png',
         },
         {
           text: 'comin shop locator',
-          img: require('../assets/img/buy-comics-shop-locator.png'),
+          img: '../assets/img/buy-comics-shop-locator.png',
         },
         {
           text: 'dc power visa',
-          img: require('../assets/img/buy-dc-power-visa.svg'),
+          img: '../assets/img/buy-dc-power-visa.svg',
         }
       ]
     }
@@ -60,7 +58,6 @@ export default {
   display: inline-flex;
 }
 .iconsBuy ul li{
-  border: 1px solid orange;
   list-style-type: none;
   display: flex;
   flex-flow: row nowrap;
