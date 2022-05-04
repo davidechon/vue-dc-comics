@@ -1,6 +1,7 @@
 <template>
   <div id="app" class="container">
-    <div><Navbar /></div>
+    <div><Header /></div>
+    <!-- <div><Navbar /></div> -->
     <div><Main /></div>
     <div><Navbar /></div>
     <div><Footer /></div>
@@ -8,6 +9,7 @@
 </template>
 
 <script>
+import Header from './components/Header.vue';
 import Navbar from './components/Navbar.vue';
 import Main from './components/Main.vue';
 import Footer from './components/Footer.vue';
@@ -15,17 +17,14 @@ import Footer from './components/Footer.vue';
 export default {
   name: 'App',
   components: {
+    Header,
     Navbar,
     Main,
     Footer
   }
 }
 </script>
-
-<style lang="scss">
-.container{
-  border: 1px solid red;
-  width: 100%;
-  height: 100%;
-}
+<style lang="sass" scoped>
+@import './assets/css/general.css'
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,900;1,100;1,300;1,400;1,600;1,900&display=swap')
 </style>
