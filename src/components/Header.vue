@@ -19,11 +19,11 @@ export default {
 <style lang="scss" scoped>
 
 header{
-    width: 100%;
-    height: 120px;
+    // height: 120px;
     line-height: 100px;
     background-color: #fff;
     margin-bottom: 0;
+    // border: 1px solid red;
 }
 
 </style>

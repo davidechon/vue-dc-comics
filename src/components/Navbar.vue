@@ -2,7 +2,7 @@
  <nav class="container">
     <div class="logo">
       <img src="../assets/img/dc-logo.png" alt="logo">
-      <ul>
+      <ul class="nav">
           <li v-for="(item, index) in links" :key="index" :class="{'selected' : item.active}">{{item.text}}</li>
       </ul>  
     </div> 
@@ -93,6 +93,7 @@ nav ul {
   top: 0;
   right: 0;
   list-style-type: none;
+  max-width: 100%;;
   height: 100px;
   text-align: center;
   font-size: 14px;
@@ -104,7 +105,7 @@ nav ul {
 }
 nav ul li{
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 .selected{
   border-bottom: 6px solid #0282f9;

@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid rowContent">
+  <div class="rowContent">
     <h2>&rarr; Content goes here &larr;</h2>
   </div>
 </template>
@@ -12,9 +12,11 @@ export default {
 
 <style lang="scss" scoped>
 .rowContent{
-  border: 1px solid yellow;
+  width: 100%;
+  border: 1px solid pink;
   height: 100px;
-  margin-left: 20px;
-  padding: 50px 0 50px;
+  display: flex;
+  align-items: center;
+  
 }
 </style>
