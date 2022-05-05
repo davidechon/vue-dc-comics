@@ -1,12 +1,14 @@
 <template>
   <div class="cards-container">
     <div class="card-group">
+      <div class="btn-top">Current Series</div>
       <ul class="row">
           <li class="card-box" v-for="(card, index) in cards" :key="index">
             <img class="card" :src="card.thumb" :alt="card.series">
             <span class="text" :class="card.series">{{card.series}}</span>
           </li>
       </ul>
+      <div class="btn-bottom">Load more</div>
     </div> 
   </div>
 </template>
@@ -101,21 +103,18 @@ export default {
 
 <style lang="scss" scope>
 .cards-container{
-  border: 1px solid yellow;
   width: 100%;
-  height: auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  
 }
 .cards-group{
-  border: 40px solid orange;
   width: 100%;
-  // height: 500px;
+  position: relative;
 }
 .row{
+  margin: 50px auto;
   width: 80%;
   display: flex;
   flex-flow: row wrap;
@@ -124,22 +123,41 @@ export default {
 }
 .row ul li{
   list-style-type: none;
+  color: #303030;
   display: inline-block;
-  
 }
 .card-box{
-  width: calc(100% / 6);
-
+  width: calc(100% / 7);
+  margin: 10px 5px;
 }
-.card{
-  // border: 4px solid yellow;
-  
-  height: 180px;
-  
+img{
+  height: 150px;
 }
 .text{
 display: block;
-margin-top: 10px;
-width: 180px;
+margin-top: 5px;
+width: 90%;
+font-size: 10px;
+}
+.btn-top{
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 70px;
+  padding: 10px;
+  background-color: #0282f9;
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.btn-bottom{
+  position: relative;
+  width: 150px;
+  margin: 0 auto 20px;
+  padding: 10px;
+  background-color: #0282f9;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
 }
 </style>
