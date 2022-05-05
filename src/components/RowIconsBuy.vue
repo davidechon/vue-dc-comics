@@ -54,26 +54,21 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .iconsBuy ul{
   display: inline-flex;
 }
 .iconsBuy ul li{
-  list-style-type: none;
+  list-style: none;
+  margin: 0 50px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  color: #ffffff;
 }
 .iconsBuy ul li .iconImg{
-  width: 60px;
-  height: auto;
+  width: 80px;
+  height: 80px;
   padding: 10px;
-  
 }
-// .iconText{
-//   color:red;
-// }
 </style>

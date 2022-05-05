@@ -1,6 +1,6 @@
 <template>
    <main class="container-fluid">
-  <div class="main container">
+  <div class="main">
     <div> <Jumbotron /> </div>
     <div> <Cards /> </div>
     <div> <RowIconsBuy /> </div>
@@ -30,7 +30,6 @@ export default {
 
 <style lang="scss">
 .main{
-  // border: 1px solid red;
   width: 100%;
   color: #ffffff;
 }

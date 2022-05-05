@@ -77,11 +77,12 @@ export default {
 .followUs ul li{
   list-style: none;
   display: inline-block;
+    margin: 0 10px;
+
 }
 .followUs img{
   width: 30px;
   height: auto;
-  margin: 10px;
 }
 .followUs img:hover{
   background-color: #fff;

@@ -1,5 +1,5 @@
 <template>
-  <div class="cards-container">
+  <div class="cards-container container">
     <div class="card-group">
       <div class="btn-top">Current Series</div>
       <ul class="row">
@@ -111,33 +111,38 @@ export default {
 }
 .cards-group{
   width: 100%;
-  position: relative;
+  position: absolute;
 }
 .row{
   margin: 50px auto;
   width: 80%;
   display: flex;
   flex-flow: row wrap;
-  justify-items: center;
+  justify-content: center;
   align-content: center;
+  list-style: none;
 }
 .row ul li{
-  list-style-type: none;
   color: #303030;
-  display: inline-block;
+   height: 40vh;
 }
 .card-box{
   width: calc(100% / 7);
   margin: 10px 5px;
 }
 img{
-  height: 150px;
+  width: 180px;
+  height: 190px;
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
 }
 .text{
 display: block;
 margin-top: 5px;
 width: 90%;
-font-size: 10px;
+font-size: 14px;
 }
 .btn-top{
   position: absolute;
