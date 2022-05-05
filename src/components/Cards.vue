@@ -160,4 +160,8 @@ font-size: 10px;
   text-align: center;
   text-transform: uppercase;
 }
+.btn-bottom:hover{
+  background-color: #ffffff;
+  color: #0282f9;
+}
 </style>
