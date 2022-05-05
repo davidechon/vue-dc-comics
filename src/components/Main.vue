@@ -1,6 +1,6 @@
 <template>
-   <main class="container">
-  <div class="main">
+   <main class="container-fluid">
+  <div class="main container">
     <div> <Jumbotron /> </div>
     <div> <Cards /> </div>
     <div> <RowIconsBuy /> </div>
@@ -28,7 +28,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .main{
   // border: 1px solid red;
   width: 100%;

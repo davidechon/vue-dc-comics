@@ -82,7 +82,7 @@ nav{
 }
 nav .logo img{
   position: absolute;
-  width: 70px;
+  height: 70px;
   top: 10px;
   left: 10px;
   line-height: 100px;

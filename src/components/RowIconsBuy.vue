@@ -1,13 +1,13 @@
 <template>
   <div class="container-fluid rowIconsBuy">
-    <div class="iconsBuy">
+      <div class="iconsBuy">
       <ul>
           <li v-for="(icon, index) in icons" :key="index">
             <img class="iconImg" :src="icon.src" :alt="icon.text">
             <span :class="icon.text">{{icon.text}}</span>
           </li>
       </ul>
-    </div> 
+    </div>
   </div>
 </template>
 

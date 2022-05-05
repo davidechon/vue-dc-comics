@@ -23,10 +23,10 @@ export default {
 
 <style lang="scss" scoped>
 .footer{
-  border: 1px solid green;
   width: 100%;
   height: 370px;
   background-image: url('../assets/img/footer-bg.jpg');
-  background-position: cover;
+  background-position: contain;
+  background-size: 100%;
 }
 </style>

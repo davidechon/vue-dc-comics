@@ -1,11 +1,37 @@
 <template>
   <div class="footerUp container">
-      <div class="container  menuFooter">
-        <ul>
-          <li v-for="(item, index) in menuItems" :key="index" >
-            {{item.text}}
-          </li>
-      </ul>   
+      <div class="container">
+        <div class="col-left">
+          <h2 class="title">DC Comics</h2>
+          <ul class="listLink">
+            <li v-for="(item, index) in dcComics" :key="index" >
+              {{item.text}}
+            </li>
+           </ul>  
+          <h2 class="title">SHOP</h2>
+          <ul class="listLink">
+            <li v-for="(item, index) in shop" :key="index" >
+              {{item.text}}
+            </li>
+           </ul>  
+        </div> <!-- /col-left-->
+        <div class="col-center">
+          <h2 class="title">DC</h2>
+          <ul class="listLink">
+            <li v-for="(item, index) in dc" :key="index" >
+              {{item.text}}
+            </li>
+           </ul> 
+        </div> <!-- /col-center-->
+        <div class="col-right"> 
+          <h2 class="title">SITES</h2>
+          <ul class="listLink">
+            <li v-for="(item, index) in sites" :key="index" >
+              {{item.text}}
+            </li>
+           </ul>  
+        </div> <!-- /col-right-->
+      <img src="../assets/img/dc-logo-bg.png" alt="DC logo big"> 
       </div>
   </div>
  
@@ -17,7 +43,7 @@ export default {
   name:'FooterUp',
   data(){
     return{
-      menuItems:[
+      dcComics:[
         {  
           category: 'dc comics',
           text: 'Characters',
@@ -45,7 +71,9 @@ export default {
         {  
           category: 'dc comics',
           text: 'News',
-        },
+        }
+        ],
+        shop:[
         {  
           category: 'shop',
           text: 'Shop DC',
@@ -53,7 +81,9 @@ export default {
         {  
           category: 'shop',
           text: 'Shop DC Collectibles',
-        },
+        }
+        ],
+        dc:[
         {  
           category: 'dc',
           text: 'Term Of Use',
@@ -97,7 +127,9 @@ export default {
         {  
           category: 'dc',
           text: 'Contact Us',
-        },
+        }
+        ],
+        sites:[
         {  
           category: 'Sites',
           text: 'DC',
@@ -128,21 +160,43 @@ export default {
 
 <style lang="scss" scoped>
 .footerUp{
-  border: 2px solid violet;
   width: 100%;
   height: 370px;
+  overflow: hidden;
 }
-.menuFooter ul{
+.container{
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: center;
+}
+.title{
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 20px;
+}
+ul{
   list-style-type: none;
   text-transform: uppercase;
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
+  margin: 20px;
 }
-.menuFooter ul li{
-  color: #ffffff;
+ul li{
+  color: #959595;
   text-decoration: none;
-  text-transform: uppercase;
-  
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.5em;
 }
+.container img{
+position: absolute;
+top: -100px;
+right: 0px;
+height: 150%;
+}
+
 </style>
