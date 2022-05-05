@@ -3,10 +3,10 @@
     <div class="iconsBuy">
       <ul>
           <li v-for="(icon, index) in icons" :key="index">
-            <img :src="icon.src" :alt="icon.text">
-            <span :class="iconText">{{icon.text}}</span>
+            <img class="iconImg" :src="icon.src" :alt="icon.text">
+            <span :class="icon.text">{{icon.text}}</span>
           </li>
-      </ul>  
+      </ul>
     </div> 
   </div>
 </template>
@@ -66,11 +66,13 @@ export default {
   justify-content: space-between;
   align-items: center;
   color: #ffffff;
-  // background-color: #ffffff;
 }
-// .iconImg{
-//   color:lime;
-// }
+.iconsBuy ul li .iconImg{
+  width: 60px;
+  height: auto;
+  padding: 10px;
+  
+}
 // .iconText{
 //   color:red;
 // }

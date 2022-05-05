@@ -9,6 +9,7 @@
 
 import FooterUp from '../components/FooterUp.vue';
 import FooterDown from '../components/FooterDown.vue';
+
 export default {
   name:'Footer',
   components: {
