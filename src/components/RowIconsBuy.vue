@@ -3,7 +3,7 @@
     <div class="iconsBuy">
       <ul>
           <li v-for="(icon, index) in icons" :key="index">
-            <img :src="icon.img" :alt="icon.text">
+            <img :src="icon.src" :alt="icon.text">
             <span :class="iconText">{{icon.text}}</span>
           </li>
       </ul>  
@@ -19,23 +19,25 @@ export default {
       icons:[
         {  
           text: 'digital comics',
-          img: '../assets/img/buy-comics-digital-comics.png',
+          // img: '../img/buy-comics-digital-comics.png',
+          src: './img/buy-comics-digital-comics.png',
+          
         },
         {
           text: 'dc merchandise',
-          img: '../assets/img/buy-comics-merchandaise.png',
+          src: './img/buy-comics-merchandise.png',
         },
         {
           text: 'subscription',
-          img: '../assets/img/buy-comics-subscriptions.png',
+          src: './img/buy-comics-subscriptions.png',
         },
         {
           text: 'comin shop locator',
-          img: '../assets/img/buy-comics-shop-locator.png',
+          src: './img/buy-comics-shop-locator.png',
         },
         {
           text: 'dc power visa',
-          img: '../assets/img/buy-dc-power-visa.svg',
+          src: './img/buy-dc-power-visa.svg',
         }
       ]
     }

@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <div><Header /></div>
-    <!-- <div><Navbar /></div> -->
     <div><Main /></div>
     <div><Footer /></div>
   </div>
