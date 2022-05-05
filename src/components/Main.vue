@@ -1,7 +1,7 @@
 <template>
    <main class="container">
   <div class="main">
-    <div> <RowContent /> </div>
+    <!-- <div> <RowContent /> </div> -->
     <div> <Cards /> </div>
     <div> <RowIconsBuy /> </div>
    
@@ -12,14 +12,14 @@
 
 <script>
 
-import RowContent from '../components/RowContent.vue';
+// import RowContent from '../components/RowContent.vue';
 import Cards from '../components/Cards.vue';
 import RowIconsBuy from '../components/RowIconsBuy.vue';
 
 export default {
   name:'Main',
   components: {
-      RowContent,
+      // RowContent,
       Cards,
       RowIconsBuy,
     

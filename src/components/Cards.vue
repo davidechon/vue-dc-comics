@@ -1,10 +1,10 @@
 <template>
-  <div class="card-container">
+  <div class="cards-container">
     <div class="card-group">
       <ul>
-          <li v-for="(card, index) in card" :key="index">
-            <img class="" :src="cards.thumb" :alt="card.series">
-            <span :class="card.series">{{card.series}}</span>
+          <li v-for="(card, index) in cards" :key="index">
+            <img class="card" :src="cards.thumb" :alt="cards.series">
+            <span :class="cards.series">{{cards.series}}</span>
           </li>
       </ul>
     </div> 
@@ -17,7 +17,7 @@ export default {
   name: 'Cards',
   data() {
     return{
-      cardsGroup:[
+      cards:[
         {
           "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX",
           "price": "$19.99",
@@ -40,6 +40,19 @@ export default {
 
 <style lang="scss" scope>
 .cards-container{
+  border: 4px solid yellow;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  
+}
+.cards-group{
+  border: 4px solid yellow;
+  width: 100%;
+  height: 500px;
+}
+.card{
   border: 4px solid yellow;
   width: 100%;
   height: 500px;
