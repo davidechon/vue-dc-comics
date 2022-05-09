@@ -1,5 +1,5 @@
 <template>
-  <div class="footerUp container">
+  <div class="footerUp container  ">
       <div class="container">
         <div class="col-left">
           <h2 class="title">DC Comics</h2>

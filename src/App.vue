@@ -21,6 +21,6 @@ export default {
 }
 </script>
 <style lang="sass" scoped>
-@import './assets/css/general.css'
+@import './assets/css/general.scss'
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,900;1,100;1,300;1,400;1,600;1,900&display=swap')
 </style>

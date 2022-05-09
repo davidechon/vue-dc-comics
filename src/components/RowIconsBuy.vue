@@ -66,7 +66,7 @@ export default {
   justify-content: space-between;
   align-items: center;
 }
-.iconsBuy ul li .iconImg{
+.iconImg{
   width: 80px;
   height: 80px;
   padding: 10px;
